@@ -33,6 +33,12 @@ ul {
   width: 34px;
 }
 
+.square.winner {
+  font-size: 30px;
+  font-weight: bolder;
+  color: green
+}
+
 .square:focus {
   outline: none;
 }
@@ -48,4 +54,30 @@ ul {
 
 .game-info {
   margin-left: 20px;
+}
+
+.game-info>button {
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+}
+
+.game-info>button.reverse {
+  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+  -moz-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  -o-transform: rotate(-180deg);
+}
+
+.game-info ol {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.game-info .active {
+  font-weight: bold;
 }
